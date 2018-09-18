@@ -27,4 +27,7 @@ LABEL Description="This is a base image, which allows connecting Jenkins agents 
 
 COPY jenkins-slave /usr/local/bin/jenkins-slave
 
+RUN curl -sSL https://get.docker.com/ | sh
+
+
 ENTRYPOINT ["jenkins-slave"]
