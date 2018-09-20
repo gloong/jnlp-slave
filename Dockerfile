@@ -8,5 +8,3 @@ RUN apk add --no-cache \
     docker \
  && pip install \
     awscli
-
-RUN rc-update add docker boot
