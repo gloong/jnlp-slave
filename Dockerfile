@@ -6,6 +6,7 @@ RUN apk update
 
 RUN apk add --no-cache \
     jq \
+    openrc \
     py-pip \
     docker \
  && pip install \
