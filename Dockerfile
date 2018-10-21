@@ -2,7 +2,9 @@ FROM jenkinsci/jnlp-slave:3.10-1-alpine
 
 USER root
 
-RUN apk update
+RUN apk update \
+    && apk upgrade
+
 
 RUN apk add --no-cache \
     curl \
