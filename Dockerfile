@@ -5,6 +5,7 @@ USER root
 RUN apk update
 
 RUN apk add --no-cache \
+    curl \
     jq \
     openrc \
     py-pip \
