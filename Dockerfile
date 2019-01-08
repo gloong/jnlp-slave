@@ -7,6 +7,7 @@ RUN apk update \
 
 
 RUN apk add --no-cache \
+    git \
     curl \
     jq \
     openrc \
